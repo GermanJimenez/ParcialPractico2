@@ -21,6 +21,7 @@ export class AnimeService {
     return this.http.get<Anime[]>(this.apiUrl).pipe(
       map((animes: Anime[]) => {
         //Complete con el código necesario para recorrer los animes y retornar el anime con el id buscado
+        
         throw new Error(`Anime con ID ${id} no encontrado`);
       })
     );
